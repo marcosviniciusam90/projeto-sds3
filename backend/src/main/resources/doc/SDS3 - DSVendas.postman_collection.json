@@ -60,6 +60,50 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Sales - total por vendedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/sales/amount-by-seller",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales",
+						"amount-by-seller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales - sucesso por vendedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/sales/success-by-seller",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales",
+						"success-by-seller"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -86,7 +130,7 @@
 	],
 	"variable": [
 		{
-			"id": "1ba2e4c5-9386-4569-a7a7-57458a16259e",
+			"id": "c1d9125a-1edc-43f2-804d-a2e3341d65fd",
 			"key": "host",
 			"value": "http://localhost:8080",
 			"type": "string"
