@@ -25,6 +25,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Sales - busca paginada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/sales?page=0&size=10&sort=date,desc",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "date,desc"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -51,7 +86,7 @@
 	],
 	"variable": [
 		{
-			"id": "81c09ffb-9092-4a69-bc28-734358e726a4",
+			"id": "1ba2e4c5-9386-4569-a7a7-57458a16259e",
 			"key": "host",
 			"value": "http://localhost:8080",
 			"type": "string"
