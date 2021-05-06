@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "0e2ea31a-56ff-499d-9edf-eba258fc563e",
+		"name": "SDS3 - DSVendas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sellers - buscar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/sellers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "908bf69e-e213-49ac-ab32-bb7161c6db99",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c406f53e-93d1-4d23-8cac-b7165a0e94ce",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "81c09ffb-9092-4a69-bc28-734358e726a4",
+			"key": "host",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
