@@ -39,7 +39,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{host}}/sales?page=0&size=10&sort=date,desc",
+							"raw": "{{host}}/sales?page=0&size=20&sort=date,desc",
 							"host": [
 								"{{host}}"
 							],
@@ -53,7 +53,7 @@
 								},
 								{
 									"key": "size",
-									"value": "10"
+									"value": "20"
 								},
 								{
 									"key": "sort",
@@ -240,13 +240,13 @@
 	],
 	"variable": [
 		{
-			"id": "679b82e6-45a7-4c71-8234-896ed61ded96",
+			"id": "ce43d2fa-70e3-4106-86ff-582abac70e36",
 			"key": "host",
 			"value": "http://localhost:8080",
 			"type": "string"
 		},
 		{
-			"id": "1326af75-fb67-402e-ac70-ff50df6aa8d9",
+			"id": "472e137d-0faf-40bc-9f4c-3de2b75c70bc",
 			"key": "heroku",
 			"value": " https://mvam-dsvendas.herokuapp.com",
 			"type": "string"
