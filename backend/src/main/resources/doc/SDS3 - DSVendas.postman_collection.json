@@ -6,104 +6,214 @@
 	},
 	"item": [
 		{
-			"name": "Sellers - buscar todos",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{host}}/sellers",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"sellers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Sales - busca paginada",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{host}}/sales?page=0&size=10&sort=date,desc",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"sales"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "0"
+			"name": "Local",
+			"item": [
+				{
+					"name": "Sellers - buscar todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
 						},
-						{
-							"key": "size",
-							"value": "10"
-						},
-						{
-							"key": "sort",
-							"value": "date,desc"
+						"url": {
+							"raw": "{{host}}/sellers",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"sellers"
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Sales - busca paginada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/sales?page=0&size=10&sort=date,desc",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"sales"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sort",
+									"value": "date,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sales - total por vendedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/sales/amount-by-seller",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"sales",
+								"amount-by-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sales - sucesso por vendedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/sales/success-by-seller",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"sales",
+								"success-by-seller"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Sales - total por vendedor",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+			"name": "Heroku",
+			"item": [
+				{
+					"name": "Sellers - buscar todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{heroku}}/sellers",
+							"host": [
+								"{{heroku}}"
+							],
+							"path": [
+								"sellers"
+							]
+						}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{host}}/sales/amount-by-seller",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"sales",
-						"amount-by-seller"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Sales - sucesso por vendedor",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
+				{
+					"name": "Sales - busca paginada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{heroku}}/sales?page=0&size=10&sort=date,desc",
+							"host": [
+								"{{heroku}}"
+							],
+							"path": [
+								"sales"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sort",
+									"value": "date,desc"
+								}
+							]
+						}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{host}}/sales/success-by-seller",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"sales",
-						"success-by-seller"
-					]
+				{
+					"name": "Sales - total por vendedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{heroku}}/sales/amount-by-seller",
+							"host": [
+								"{{heroku}}"
+							],
+							"path": [
+								"sales",
+								"amount-by-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sales - sucesso por vendedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{heroku}}/sales/success-by-seller",
+							"host": [
+								"{{heroku}}"
+							],
+							"path": [
+								"sales",
+								"success-by-seller"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	],
 	"event": [
@@ -130,9 +240,15 @@
 	],
 	"variable": [
 		{
-			"id": "c1d9125a-1edc-43f2-804d-a2e3341d65fd",
+			"id": "679b82e6-45a7-4c71-8234-896ed61ded96",
 			"key": "host",
 			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"id": "1326af75-fb67-402e-ac70-ff50df6aa8d9",
+			"key": "heroku",
+			"value": " https://mvam-dsvendas.herokuapp.com",
 			"type": "string"
 		}
 	]
