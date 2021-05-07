@@ -30,3 +30,16 @@ html, body {
 .text-primary {
     color: var(--color-primary) !important;
 }
+
+.btn-primary {
+    background-color: var(--color-primary) !important;
+    opacity: 1;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary {
+    opacity: 0.8;
+}
