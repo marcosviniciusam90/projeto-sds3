@@ -2,7 +2,6 @@
 export const BASE_URL = process.env.REACT_APP_BACKEND_URL ?? 'http://localhost:8080';
 
 /* 
-Variáveis de ambiente com prefixo REACT_APP_ é padrão do Netlify, 
-uma vez que tenha esse prefixo vai ser processada pelo browser e o
-JavaScript terá acesso
+No Netlify, variáveis de ambiente com prefixo "REACT_APP_" serão processadas pelo browser e o
+JavaScript terá acesso as mesmas
 */
