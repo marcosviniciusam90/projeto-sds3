@@ -6,7 +6,7 @@ Coleção do Postman para testar requisições: [Link](https://github.com/marcos
 
 # O que foi utilizado?
 
-- React
+- ReactJS
 - Bootstrap
 - Yarn
 - Java
